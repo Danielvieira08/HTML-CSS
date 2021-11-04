@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+   --cor1:#dddddd;
+   --cor2:#CEC9D1 ;
+   --cor3: #79767a; 
+   --cor4: #afafaf;
+   
+
+   --fontes-destaques: 'bebas neue';
+}   
+body {
+    background-color: #CEC9D1;  
+}
+
+h1 {
+    text-shadow: 3px 2px 0px rgba(240, 236, 236, 0.089) ;
+    font-family: var(--fontes-destaques);
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 10px;
+}
+#margem { 
+    background-color: var(--cor1);
+    min-width: 300px;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.075);
+}
+
+#imagem { 
+    width: 250px; 
+    height: 250px; 
+    padding: 10px;
+    float: left; 
+    border-radius: 110px;
+    box-shadow: 3px 3px 15px #514e524f;
+}
+fieldset {
+    padding-left: 260px;
+    padding-top: -5px;
+    border: none;
+      
+}
+.fiel01 {
+    padding-left: 20px;
+    padding-top: -5px;
+}   
+input, text {
+     margin-left: 10px;
+     
+}    
+input, textarea {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-weight: normal;
+    font: 5px;
+   
+   
+}
+input:hover, textarea:hover {
+    background-color: var(--cor1);
+    color: black;
+    font-size: 14px;
+    
+}
+#sub{
+    margin-left: 600px;
+    margin-top: 10px;
+}
+p {
+    font-family: cursive;
+    color: var(--cor3);
+}
+input, textarea {
+    border-radius: 1em;
+}
+.edit {
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em; 
+}
+.botao {
+    font-family: cursive;
+    padding: 10px 15px 10px 15px;
+} 
+.botao:hover {
+    background-color: var(--cor1);
+
+}  
+
+
+
+
+
+
+    
+

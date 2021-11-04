@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Crie Seu Curriculo </title>
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="margem">
+        <div id="foto">
+            <img src="imagem/imagem.Usuario.jpg" id="imagem">
+        </div>
+        <div>
+        <fieldset class="fiel01"><legend>    
+        <form method="POST" action="daniel.vds" id="curriculo2">
+            <h1 id="dsd"> Dados Pessoais </h1> 
+             <p> <label for="cnome"><strong>Nome:</strong></label> <input type="text"  name="tnome" id="cnome" placeholder="Nome completo ex: Maria Silva" size="50" maxlength="30"></p>   
+             <p> <label for="cNas"><strong>Nascimento:</strong></label><input type="date" name="tNas" id="cNas"></p>
+             <p> <label for="cEst"><strong>Estado Civil:</strong></label> 
+                <select name="cEst">
+                <optgroup label="Estado civil">
+                    <option>Solteiro</option>
+                    <option>Casado</option>
+                    <option>Divorciado</option>
+                    <option>Viuvo</option>
+                
+                </optgroup>
+                </select>
+                <label for="cNaci"><strong>Nacionalidade:</strong></label> <input type="text" name="tNaci" id="cNaci" placeholder="Ex:Brasileiro" min="1" max="15" maxlength="15">
+                </p>
+                <p><label for="cEsta"><strong>Estado:</strong></label placeholder="Ex:São paulo">
+                <select name="cEsta">
+                <optgroup label="Região Sudeste">
+                   <option value="SP">São Paulo</option>
+                   <option value="RJ">Rio De Janeiro</option>
+                   <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Parana</option>
+                </optgroup>
+                </select>
+                <label for="cCid"><Strong> Cidade: </Strong></label> <input type="text" name="tCid" id="cCid" placeholder="Sua cidade" maxlength="20" list="cidade"></p>
+                <datalist id="cidade">
+                    <option value="Campinas"></option>
+                    <option value="São Paulo"></option>
+                    <option value="Indaiatuba"></option>
+                    <option value="Niteroi"></option>
+                    <option value="Cabo Frio"></option>
+                    <option value="Paraná"></option>
+                    <option value="Florianópolis"></option>
+                </datalist>
+                </p>
+                <p><label for="cEnd"><Strong> Endereço:</Strong></label> <input type="text" name="tEnd" id="cEnd" placeholder="Ex:Rua,Av" maxlength="20">
+                <label for="cNum"></label><strong> Nº:</strong> <input type="number" name="tNum" id="cNum" placeholder="Ex:155" min="1" max="9999" maxlength="9999"></p>
+                <p><label for="cCont"></label><strong> Contato:</strong> <input type="Number" name="tCont" id="cCont"
+                placeholder="Ex: (19) 993178561">
+                <label for="cEma"></label><strong> Email:</strong> <input type="email" name="tEmail" id="cEma"
+                placeholder="daniel.45@gmail.com"></p>
+                <p><Strong>Sofre de Alguma deficiencia física:</Strong></p>
+                <p>
+                    <label for="cDef">Sim</label><input type="radio" name="tDed" id="cDef">
+                    <label for="cDef">Não</label><input type="radio" name="tDed" id="cDef" checked/>
+                </p>
+                </legend>
+                </fieldset>
+                </p>
+                <fieldset class="field"><legend>
+                <h1><label for="cObj"><strong>Objetivo</strong> <hr><label></h1>
+                <textarea name="tObj" id="cObj" cols="100" rows="8" class="edit" placeholder="Ex:“Com as experiências adquiridas ao longo dos meus estágios, procuro agora uma chance de efetivação na minha área de conhecimento.” "></textarea>
+            </legend>    
+            </fieldset>
+            <fieldset class="fild0"><legend>
+            <h1><label for="cForm"><strong>Formação</strong><hr></label></h1>
+            <p><strong>Escolaridade: </strong><input type="text" name="tForm" id="cForm" placeholder="Ex: Ensino medio Completo" list="escolaridade">
+            <datalist id="escolaridade">
+               <option value="Ensino fundamental incompleto"></option>
+               <option value="Ensino Médio incompleto"></option>
+               <option value="Ensino Médio cursando"></option>
+               <option value="Ensino Médio completo"></option>
+           </datalist>
+           <label for="cDat"><strong>Conclusão: </strong></label><input type="date" name="tDat" id="cDat"></p>
+           <p><label for="cSup"><strong>Ensino Súperio</strong><hr></p>
+           <p></label for="cCurs">Curso<input type="text" name="tSup" id="cSup" placeholder="Ex:Engenharia Civil">
+           <label for="cTerm"> Conclusão:</label><input type="date" name="tTerm" id="cTerm">
+        </p>
+            </legend>
+            </fieldset>
+            <fieldset><legend>
+            <h1><strong>Experiências Profissional</strong><hr></h1>
+            <p><label for="cExp"><strong>Nome da Empresa:<strong</label><input type="text" name="tExp" id="cExp" placeholder="Nome da empresa">
+            <label for="cFunc"><strong>Função:</strong></label><input type="text" name="tFunc" id="cFunc" placeholder="Ax de produção"></p>
+            <p><p><label for="cIni"><strong>Inicio:</strong></label><input type="date" name="tIni" id="cIni">
+            <label for="cFin"><strong>Afastamento:</strong></label><input type="date" name="tFin" id="cFin"></p>
+            </legend>
+            </fieldset>
+            <fieldset><legend>
+            <h1><strong>Resumo Profissional</strong><hr></h1>
+            <p><label for="cRes"></label>
+            <textarea  name="tRes" id="cRes"cols="100" rows="8" class="edit" placeholder="Em busca de nova proposta de trabalho na área  de (Área Desejada), apresento-lhes meu currículo e coloco-me à disposição para os esclarecimentos necessários."></textarea> 
+            </legend>
+            </fieldset>
+            <legend>
+            <input type="submit" value="Finalizar curriculo" class="botao">
+            </legend>
+            </form>    
+            </div>
+        </div>
+    </div>
+     
+</body>
+</html>
